@@ -1,0 +1,1 @@
+int var; //our variable definition is done in a header
