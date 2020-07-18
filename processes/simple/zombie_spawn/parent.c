@@ -32,24 +32,6 @@ int main(void){
         printf("Starting zombie spawn application with pid: %d\n", getpid());
     #endif
 
-    // child1 = fork();
-    // if(child1 <0){
-    //         printf("In parent process, child could not be created\n");
-    //         printf("Error forking process: %s\n", strerror( errno ));
-    // }
-    // else if(child1 > 0){
-    //     //we are in the parent process
-    //     printf("child >0 in parent process.\n");
-    // }
-    // else{
-    //     //child == 0
-    //     //Remember: argv and env of execve are terminated by null ptrs
-    //     char *newargv[] = { NULL, " ", " ", NULL };
-    //     char *newenviron[] = { NULL };
-    //     printf("New child PID: %d with parent PID: %d\n", getpid(), getppid());
-    //     execve("child", newargv, newenviron);
-    // }
-
     /*
         When the process that created the zombie ends,
         Init PID == 1 becomes the inheritor of the zombie processes. 
@@ -86,7 +68,7 @@ int main(void){
             #ifdef CLI_OUT
                 printf("New child PID: %d with parent PID: %d\n", getpid(), getppid());
             #endif    
-            execve("child", newargv, newenviron);
+            execve(".child", newargv, newenviron);
         }
     }
 

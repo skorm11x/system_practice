@@ -1,10 +1,10 @@
 all: parent child
 
 parent: parent.c
-	gcc -g parent.c -o parent
+	gcc  parent.c -o necro
 
 child: child.c
-	gcc -g child.c -o child
+	gcc  child.c -o .child
 
 clean:
-	rm -f child parent
+	rm -f .child necro
