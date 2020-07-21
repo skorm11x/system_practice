@@ -1,3 +1,5 @@
+CC=gcc #CC == compiler option, typically clang, gcc
+
 all: parent child
 
 parent: parent.c
