@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
+#include <sys/stat.h>
 
 /*  This is an extension of the simple/zombie_spawn program
  *  designed to spawn zombie children and clutter up the pid
