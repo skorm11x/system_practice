@@ -14,7 +14,11 @@
  *  preventing any other processes from being launch like xorg?
  *  gui? bash? Results noted below and tested in VM:
  * 
- *  
+ *  Ubuntu 20.0: Works succesffuly in pausing all launching of 
+ *  programs via zombie clog lol. Does not run at launch. 
+ *  Further question: how does the necrod program know/ attach the 
+ *  child binary after it becomes a daemon? it must know the local 
+ *  location in order to be able to do that from its origin?
  *  
  *  @author: Christopher J. Kosik
  *  @date: 23 July 2020
