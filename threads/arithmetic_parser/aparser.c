@@ -8,7 +8,9 @@
 int main(int argc, char * argv[]){
 
 
-
+    printf("Entry\n");
+    hello();
+    bye();
 
     return 0;
 }
