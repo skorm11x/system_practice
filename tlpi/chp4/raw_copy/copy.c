@@ -52,6 +52,8 @@ int main(int argc, char *argv[]){
       usageErr("did not pass 2 files or --help option. Exiting.");
   }
 
+  
+
 
 }
  
