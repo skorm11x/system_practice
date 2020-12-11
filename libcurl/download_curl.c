@@ -59,7 +59,7 @@ int main(int argc, char * argv[]){
 
 
     } else if(argc == 3){
-        if(argv[2] == '-h'){
+        if(strcmp(argv[2],"-h") == 0){
             printf("Usage: download_url <url> [options...]\n");
             printf("-h \t Display list of options\n");
             return EXIT_SUCCESS;
@@ -69,34 +69,6 @@ int main(int argc, char * argv[]){
             return EXIT_FAILURE;
         }
     }
-
-
-
-    
-    // CURL *curl = curl_easy_init(); //initialize curl typedef
-
-    // //double check curl init correctly
-    // if(!curl){
-    //     fprintf(stderr,"curl init failure");
-    //     return EXIT_FAILURE;
-    // }
-
-    // //set options
-    // //curl detect protocol in 3rd param automatically
-    // curl_easy_setopt(curl, CURLOPT_URL,"https://skorm11x.github.io");
-
-    // //to do something with data we need to set another option in setopt: got_data call (callback function)
-    // //provide a function pointer for curl setopt
-    // curl_easy_setopt(curl,CURLOPT_WRITEFUNCTION, got_data);
-
-    // //perform out action
-    // //use a CURLcode type to detect return status on performance of op
-    // CURLcode download_result = curl_easy_perform(curl);
-    // if(download_result != CURLE_OK){
-    //     fprintf(stderr,"Download error for https://skorm11x.github.io error: %s\n",curl_easy_strerror(download_result));
-    // }
-
-    // curl_easy_cleanup(curl); //cleaup curl
 
     return EXIT_SUCCESS;
 }
